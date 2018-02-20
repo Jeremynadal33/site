@@ -21,6 +21,7 @@
 	height:70px;
 	background:white;
 	position:fixed;
+	opacity: 0.8;
 	
 }
 .lien{
@@ -28,37 +29,44 @@
 	font-size: 25px;
 	margin-right: 10px; 
 	font-weight:bold;
-	text-align: center;
-	line-height: 20px;
-	text-decoration: none;
-    text-decoration-line: none;
-    text-decoration-style: initial;
-    text-decoration-color: initial;
-
+	
 }
+
+
 .optionsmenu{
 	margin-left: 860px;
-	margin-top: 12px;
+	/*margin-top: 12px;*/
+	position: absolute;
+  	top: 50%; /* poussé de la moitié de hauteur du référent */
+  	transform: translateY(-50%);
+
 }
-#nom_list{
-	color:green;
+#nom_liste{
+	font-size: 30px;
+	font-weight: bold;
+	margin-left: 100px;
+	color: #128B33;
+	line-height: -25px;
+	position: absolute;
+  	top: 50%; /* poussé de la moitié de hauteur du référent */
+  	transform: translateY(-50%);
 }
+
 #logo{
 	height:70px;
 	width:70px;
 	position: fixed;
 }
 
-.Presentation{
+.bienvenu{
 	height: 500px;
 	width:100%;
-	background-color: green;
 }
 
-.carre3{
+.presentation{
 	height: 500px;
 	width:100%;
-	background-color: blue;
+	background-color: #0F7D41;
 }
 
 .footer{
@@ -67,6 +75,24 @@
 	background-color: #1D2C36;
 	color: grey;
 }
+.foot{
+	height: 150px;
+	width:100%;
+	text-align: center;
+	position: relative;
+  	top: 50%; /* poussé de la moitié de hauteur du référent */
+  	transform: translateY(-50%);
+  	text-decoration: none;
+
+
+}
+
+
+
+a:hover active{
+color: green;
+}
+
 
 
 
