@@ -3,10 +3,20 @@
 .menu{
 	width:100%;
 	height:70px;
+	position:fixed;
+	z-index: 100;
+	
+}
+
+.fondmenu{
+
+	width:100%;
+	height:70px;
 	background:white;
 	position:fixed;
 	opacity: 0.8;
-	
+	z-index: 99;
+
 }
 .lien{
 	color:black;
@@ -36,10 +46,12 @@
 
 
 .optionsmenu{
-	margin-left: 1050px;
+	margin-left: 1000px;
 	position: absolute;
   	top: 50%; /* poussé de la moitié de hauteur du référent */
   	transform: translateY(-50%);
+  	z-index: 100;
+
 
 }
 
@@ -55,15 +67,17 @@
   	transform: translateY(-50%);
   	text-shadow: black 1px 1px 1px;
   	opacity: 1;
+  	z-index: 100;
 }
 
 #logo{
 	height:70px;
 	width:70px;
 	position: fixed;
+	z-index: 100;
 }
 
-.bienvenu{
+.baniere{
 	height: 500px;
 	width:100%;
 }
@@ -74,7 +88,10 @@
 	background-color: #008245;
 }
 
-
+#espace{
+	width: 100%;
+	height: 75px;
+}
 .presentation{
 	height: 1600px;
 	width:100%;
@@ -86,6 +103,7 @@
 	height: 200px;
 	background-color: #538069;
 	border-radius: 10%;
+
 
 }
 
@@ -171,16 +189,16 @@ h1{
 
 
 
-/*Parti pour membres*/
+/*$$$$$$$$$$$$$$$$$$$$$Parti pour membres$$$$$$$$$$$$$$$$$$$$*/
 
 .ttlemonde{
-	height: 1500px;
+	height: 2000px;
 	width: 100%;
 	background-color: #0F7D41
 }
 
 .bureau{
-	height: 300px;
+	height: 400px;
 	width: 100%;
 }
 .ban{
@@ -194,57 +212,79 @@ h1{
 	font-size: 35px;
 	color: white;
 	margin-left: 100px;
-	
-
-
 }
 .partenariat{
-	height: 300px;
+	height: 400px;
 	width: 100%;
 }
 .logistique{
-	height: 300px;
+	height: 400px;
 	width: 100%;
 }
 .communication{
-	height: 300px;
+	height: 400px;
 	width: 100%;
 }
 
 .evennement{
-	height: 300px;
+	height: 400px;
 	width: 100%;
 }
 
-.image1{
-	height:180px;
-	width: 150px;
-	margin-right: 80px;
-	margin-left: 100px;	
-	border: solid 5px #1B683B;
-	margin-top: 25px;
+/***************HOVER pour photos**************/
+
+.fond{
+	background-color: #0F7D41;
+	width:100%;
+	height: 2000px;
+}
+
+.banieretitre{
+	background-color: #156939;
+	height: 60px;
+	width: 100%;
+	color: white;
+	padding: 10px;
+	font-size: 30px;
+	padding-left: 100px;
+	font-family: Montserrat;
+	font-weight: bold;
+}
+
+.galerie{
+
+	align-items: center;
+	justify-content: center;
+	padding: 35px;
+
+}
+
+.photo{
+
+	display: inline-flex;
+	justify-content: center;
+	height:100%;
+	width: 100%;
+
 	
 }
-.image2{
-	height:180px;
-	width: 150px;
-	margin-right: 80px;
-	margin-top: 25px;
-	border: solid 5px #1B683B;
-	
+.photo:hover {
+	transform: scale(1.4);
+	transition: all 0.5s ease-in;
 }
-.image2:hover{
-	height: 180px;
-	width: 150px;
 
-	background-color: black;
-
-}
-.container{
+.imagecadre{
+	width: 200px;
+	height: 230px;
 	position: relative;
-	height:180px;
-	width: 150px;
-	display: inline-block;
+	overflow: hidden;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border: solid 5px ;
+	color: #156939;
+	margin-right: 30px;
+
 }
 .overlay{
 	position: absolute;
@@ -255,33 +295,33 @@ h1{
 	background-color: #eee;
 
 }
-.container:hover	.overlay{
+.imagecadre:hover	.overlay{
 	opacity: 0.8;
 
 }
 .text{
 	color: white;
 	position: absolute;
-	top:50%;
-	left:50%;
-	transform: translate(-50%,-50%);
-	
+	top:73%;
+	left:15%;
+			
+	font-weight: bold;
 	font-size: 20px;
+	opacity: 0;
+}
+.imagecadre:hover .text{
+	transition: all 1s ease-in;
+	opacity: 1;
 }
 .overlaytop{
 	height: 0%;
 	width: 100%;
-	top:0;
-	left:0;
+	bottom: 0;
 }
-.container:hover	.overlaytop{
-	height: 50%;
-}
-.image3{
-	display: block;
-	height:180px;
-	width: 150px;
 
+.imagecadre:hover	.overlaytop{
+	height: 40%;
+	transition: all 0.5s ease-in;
 }
 
 
